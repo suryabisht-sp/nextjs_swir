@@ -111,7 +111,6 @@ import Image from "next/image"
 
 const PokemonEntry = ({ name }: { name: string }) => {
   const { data, isLoading, error } = usePokemon(name)
-  console.log("data", data)
    if (error) {
     return <div>Something occured while fetching the data</div>
   }
